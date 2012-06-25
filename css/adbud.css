@@ -1,0 +1,450 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border: none;
+    list-style: none;
+}
+
+a, a:visited {
+    color: #ff6c00;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: HelveticaLT;
+    src: url(../fonts/HelveticaNeueLTPro-LtIt.eot);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: HelveticaLT;
+    src: url(../fonts/HelveticaNeueLTPro-LtIt.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: FrutPL;
+    src: url(../fonts/frutcpl-webfont.eot);
+}
+
+@font-face {
+    font-family: FrutPL;
+    src: url(../fonts/frutcpl-webfont.ttf);
+}
+
+button::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+
+button {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+/* button */
+button.submit,
+a.submit {
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 5px 0 0;
+    background: url(../img/submit-right.png) no-repeat;
+    background-position: right top;
+    margin: 0;
+    float: left;
+    border: none;
+    white-space: nowrap;
+}
+
+#main div.block:hover a.submit,
+button.submit:hover,
+a.submit:hover {
+    background-position: right -27px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.submit div,
+a.submit span {
+    display: block;
+    padding: 0 15px 0 20px;
+    text-align: center;
+    background: url(../img/submit-left.png) no-repeat;
+    height: 27px;
+    line-height: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#main div.block:hover a.submit span,
+button.submit:hover div,
+a.submit:hover span {
+    background-position: left -27px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a3a3a;
+    background: #ffffff;
+    cursor: default;
+    overflow: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#top {
+    height: 138px;
+    width: 960px;
+    background: url(../img/top.png) no-repeat;
+    margin: 0 0 20px;
+}
+
+#logo,
+#logo a {
+    display: block;
+    width: 217px;
+    height: 73px;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+
+#logo a {
+    background: url(../img/logo.png) no-repeat;
+}
+
+#top h2 {
+    font-family: HelveticaLT, Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: normal;
+    color: #3d3d3d;
+    background: url(../img/slash.png) no-repeat;
+    background-position: left center;
+    overflow: hidden;
+    padding: 9px 0 2px 61px;
+    margin: 40px 0 0 33px;
+    width: 300px;
+    float: left;
+}
+
+#top h2.ie {
+    text-indent: -1000em;
+    background: url(../img/tagline.png) no-repeat;
+    display: block;
+    height: 48px;
+}
+
+#top h2.ie + h2 {
+    display: none;
+}
+
+#top address {
+    float: right;
+    font-style: normal;
+    margin: 45px 30px 0 0;
+    padding: 0 49px 0 0;
+    text-align: right;
+    position: relative;
+}
+
+#top address a.more {
+    width: 30px;
+    height: 26px;
+    display: block;
+    background: url(../img/top-more.png) no-repeat;
+    text-indent: -1000em;
+    text-align: left;
+    overflow: hidden;
+    right: 0;
+    top: 11px;
+    position: absolute;
+}
+
+#top address a.more:hover {
+    background-position: left -26px;
+}
+
+#main {
+    overflow: hidden;
+}
+
+#main h3 {
+    font-size: 17px;
+    font-family: FrutPL, Helvetica, Arial, sans-serif;
+    color: #171717;
+    font-weight: normal;
+    margin: 0 0 3px;
+}
+
+#main div.columns {
+    overflow: hidden;
+    margin: 0 0 36px;
+}
+
+#main div.block {
+    margin: 0 0 0 30px;
+    width: 300px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#main div.block h3 {
+    width: 220px;
+}
+
+#main div.block:first-child {
+    margin: 0;
+}
+
+#main div.block img {
+    margin: 0 0 9px;
+}
+
+#main div.block p {
+    margin: 0 0 19px;
+    color: #6a6a6a;
+}
+
+#main div.smallblock a.submit span,
+#main div.block a.submit span {
+    padding-right: 60px;
+}
+
+#main div.block a.submit + span {
+    display: block;
+    width: 139px;
+    height: 127px;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    background: url(../img/block-more.png) no-repeat;
+}
+
+#main div.block:hover a.submit + span {
+    background-position: left -127px;
+}
+
+#main cite.main {
+    display: block;
+    background: #f2f1f1;
+    border-left: solid 20px #d3d3d3;
+    font-style: normal;
+    color: #353535;
+    padding: 23px 113px 23px 37px;
+    width: 460px;
+    margin: 0 30px 0 0;
+    float: left;
+}
+
+#main div.smallblock {
+    width: 300px;
+    float: left;
+    margin: -3px 0 0 0;
+}
+
+#main div.smallblock h3 {
+    margin: 0 0 9px;
+}
+
+#main div.smallblock p {
+    margin: 0 0 24px;
+    color: #6a6a6a;
+}
+
+#content {
+    padding: 8px 0 0;
+    overflow: hidden;
+}
+
+#menu {
+    width: 289px;
+    height: 188px;
+    padding: 27px 0;
+    background: url(../img/menu.png) no-repeat;
+    float: left;
+    margin: 5px 42px 0 0;
+}
+
+#menu ul li {
+    line-height: 28px;
+    height: 28px;
+    padding: 0 0 0 31px;
+}
+
+#menu ul li a {
+    color: #000000;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu ul li.twolines {
+    height: 28px;
+    padding: 6px 0 6px 31px;
+    line-height: normal;
+}
+
+#menu ul li.selected {
+    background: url(../img/menu-selected.png) no-repeat;
+    color: #ffffff;
+}
+
+#menu ul li.selected a {
+    color: #ffffff;
+}
+
+#menu ul li.twolines.selected {
+    background: url(../img/menu-selected-twoline.png) no-repeat;
+    color: #ffffff;
+}
+
+#content div.content {
+    overflow: hidden;
+    padding: 0 79px 0 0;
+}
+
+#content h1 {
+    font-size: 26px;
+    font-family: FrutPL, Helvetica, Arial, sans-serif;
+    color: #171717;
+    font-weight: normal;
+    margin: 0 0 6px;
+}
+
+#content h2 {
+    font-size: 20px;
+    font-family: FrutPL, Helvetica, Arial, sans-serif;
+    color: #171717;
+    font-weight: normal;
+    margin: 0 0 16px;
+    padding: 10px 0 8px;
+    border-bottom: solid 1px #ff8900;
+}
+
+#content ul.breadcrumbs {
+    margin: 0 0 24px;
+}
+
+#content ul.breadcrumbs li,
+#content ul.breadcrumbs li a {
+    display: inline;
+    color: #999999;
+    font-size: 11px;
+}
+
+#content ul.breadcrumbs li a {
+    text-decoration: underline;
+}
+
+#content ul.breadcrumbs li a:hover {
+    text-decoration: none;
+}
+
+#content ul.breadcrumbs li:before {
+    content: " / ";
+}
+
+#content ul.breadcrumbs li:first-child:before {
+    content: "";
+}
+
+#content div.content ul.list,
+#content div.content p {
+    margin: 0 0 16px;
+}
+
+#content div.content ul.list li {
+    margin: 0;
+    padding: 0 0 0 32px;
+    background: url(../img/dot.png) no-repeat;
+    background-position: left 3px;
+}
+
+#content div.content address {
+    float: right;
+    width: 210px;
+    padding: 0 0 0 26px;
+    background: url(../img/contact-line.png) no-repeat;
+    background-position: left center;
+    font-style: normal;
+}
+
+#content div.content address a {
+    text-decoration: underline;
+}
+
+#content div.content address a:hover {
+    text-decoration: none;
+}
+
+#content div.content p.contact {
+    overflow: hidden;
+    padding: 0 15px 0 0;
+}
+
+#content cite.more {
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    padding: 0 23px;
+    color: #ffffff;
+    font-style: normal;
+    background: url(../img/citemore.png) no-repeat;
+    margin: 46px 0 0 0;
+}
+
+#content cite.more a {
+    text-decoration: underline;
+    margin: 0 0 0 58px;
+}
+
+#content cite.more a:hover {
+    text-decoration: none;
+}
+
+#footer {
+    height: 24px;
+    line-height: 24px;
+    background: url(../img/footer.png) no-repeat;
+    margin: 45px 0 40px;
+    padding: 0 0 0 212px;
+    color: #989898;
+}
+
+#footer a {
+    color: #989898;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
